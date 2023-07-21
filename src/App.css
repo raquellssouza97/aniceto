@@ -1,38 +1,126 @@
-.App {
+
+section.slider{
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.slider-content{
+  width: 400%;
+  height: auto;
+  display: flex;
+}
+
+.slider-content input, .img-mobile{
+  display: none;
+}
+
+.slide-box{
+  width: 25%;
+  height: auto;
+  position: relative;
   text-align: center;
+  transition: 1s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.slide-box img{
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-manual, .nav-auto{
+  position: absolute;
+  width: 100%;
+  margin-top: 35%;
+  display: flex;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-manual .manual-btn, .nav-auto div{
+  border: 1px solid #adb4ba;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+  margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover{
+  background-color: #adb4ba;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
+  background-color: #adb4ba;
+}
+
+#radio1:checked ~ .primeiro{
+  margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+  margin-left: -50%;
+}
+.title{
+  margin-bottom: 14px;
+}
+
+.form{
+  max-width: 600px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.input {
+  margin-bottom: 14px;
+  height: 34px;
+  border-radius: 4px;
+  border: 0;
+  padding: 0 8px;
 }
 
-.App-link {
-  color: #61dafb;
+.textarea {
+  margin-bottom: 14px;
+  border-radius: 4px;
+  border: 0;
+  padding: 8px;
+  height: 94px;
+  resize: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.button {
+  height: 34px;
+  width: 150px; /* Largura do botão */
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  background-color: #3d3e40;
+  color: #ffffff; /* Defina a cor do texto como branco */
+  font-size: 18px;
+  transition: background-color, transform 0.8s;
+}
+
+.button:hover {
+  background-color: #3d3e40;
+  transform: scale(1.01);
+}
+@media screen and (max-width: 900px) {
+  .img-desktop{
+      display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .img-mobile{
+      display: block;
+  }
+
+  .nav-auto, .nav-manual{
+      margin-top: 60%;
   }
 }
