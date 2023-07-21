@@ -89,8 +89,8 @@ function sendEmail(e){
           </div>
 
           <div className="slide-box">
-            <img className="img-desktop" src={logoImage1} alt="slide 3" />
-            <img className="img-mobile" src={logoImage2} alt="slide 1" />
+            <img className="img-desktop" src={logoImage1} alt="slide 2" />
+            <img className="img-mobile" src={logoImage2} alt="slide 2" />
           </div>
 
           <div className="slide-box">
@@ -116,7 +116,7 @@ function sendEmail(e){
         <div className="container1">
           <h2>Home</h2>
           <p>Bem-vindo à nossa página inicial de consultoria! Aqui, oferecemos soluções personalizadas e inovadoras para atender às suas necessidades de negócio. Somos uma equipe de consultores altamente capacitados e experientes, prontos para auxiliá-lo a alcançar seus objetivos com sucesso.</p>
-          {/* O restante do conteúdo foi omitido por motivos de espaço */}
+          
         </div>
       </section>
 
@@ -124,7 +124,7 @@ function sendEmail(e){
         <div class="container1">
           <h2>Sobre</h2>
           <p>A consultoria é uma prática profissional que desempenha um papel fundamental em diversas áreas e setores da economia. Trata-se de um serviço especializado e estratégico, oferecido por profissionais altamente capacitados e experientes, conhecidos como consultores.</p>
-          {/* O restante do conteúdo foi omitido por motivos de espaço */}
+         
         </div>
       </section>
 
@@ -132,7 +132,7 @@ function sendEmail(e){
         <div class="container1">
           <h2>Serviços</h2>
           <p>Os serviços de consultoria são essenciais para orientar empresas e indivíduos em busca de soluções personalizadas e eficazes para seus desafios. Com vasta experiência e conhecimento especializado, os consultores oferecem um suporte estratégico valioso, abrangendo diversas áreas.</p>
-          {/* O restante do conteúdo foi omitido por motivos de espaço */}
+          
         </div>
       </section>
 
