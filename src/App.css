@@ -1,12 +1,18 @@
+.App {
+  background-image: url(./img/fundo.jpg);
+ 
 
+}
 section.slider{
   margin: 0 auto;
   width: 100%;
   height: auto;
   padding: 0 !important;
   overflow: hidden;
+ 
 }
 
+section p{ color:#f2f2f2;}
 .slider-content{
   width: 400%;
   height: auto;
@@ -70,23 +76,31 @@ section.slider{
 }
 .title{
   margin-bottom: 14px;
+ 
 }
 
-.form{
+.form { 
   max-width: 600px;
   width: 100%;
   display: flex;
   flex-direction: column;
+  
+  /* Outros estilos do seu formulário aqui */
 }
 .input {
+  border: 1px solid #c0c0c0;
+  
   margin-bottom: 14px;
   height: 34px;
   border-radius: 4px;
   border: 0;
   padding: 0 8px;
+  display:flex;
 }
 
 .textarea {
+  border: 1px solid #c0c0c0;
+  text-align: center;
   margin-bottom: 14px;
   border-radius: 4px;
   border: 0;
@@ -96,19 +110,21 @@ section.slider{
 }
 
 .button {
+  border: 1px solid #c0c0c0;
+  text-align: center;
   height: 34px;
   width: 150px; /* Largura do botão */
   border-radius: 4px;
   border: 0;
   cursor: pointer;
-  background-color: #3d3e40;
-  color: #ffffff; /* Defina a cor do texto como branco */
+  background-color: #c0c0c0;
+  color: black; /* Defina a cor do texto como branco */
   font-size: 18px;
   transition: background-color, transform 0.8s;
 }
 
 .button:hover {
-  background-color: #3d3e40;
+  background-color: #c0c0c0;
   transform: scale(1.01);
 }
 @media screen and (max-width: 900px) {
@@ -124,3 +140,297 @@ section.slider{
       margin-top: 60%;
   }
 }
+/* Estilos para o rodapé */
+.footer {
+  background-color: #c0c0c0;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+   background: #3d3e40;
+}
+
+/* Estilo opcional para melhorar a aparência */
+.rodape {
+  max-width: 960px;
+  margin: 0 auto;
+ 
+}
+/* seu_arquivo.css */
+.mapa {
+  /* Utiliza Flexbox para centralizar os elementos */
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  width: 100%;
+  /* Define o height do contêiner, para ocupar toda a tela */
+  height: 100%;
+
+  /* Adiciona box-sizing para incluir o preenchimento e bordas na largura total */
+  box-sizing: border-box;
+
+  /* Adiciona uma media query para telas com largura máxima de 768 pixels (tamanho de tela típico de celulares) */
+  @media (max-width: 768px) {
+    /* Modifique os estilos conforme necessário para se ajustar ao tamanho da tela do celular */
+    height: auto; /* Defina a altura como "auto" para que o conteúdo determine a altura */
+    padding: 20px; /* Adicione um preenchimento para dar espaço ao conteúdo */
+  }
+}
+.imagem-container {
+  background: #3d3e40;
+  border-radius: 10px;
+  width: 250px;
+  display: flex; /* Adiciona display flex para alinhar o conteúdo horizontalmente */
+  flex-direction: column; /* Define a direção do flex para organizar conteúdo em coluna */
+  align-items: center; /* Centraliza os elementos horizontalmente */
+}
+
+.imagem-container img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  margin: 10px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.imagem-container p {
+  margin: 10px;
+  color:#fff;
+  text-align: center; /* Centraliza o texto horizontalmente */
+}
+.imagem-container1 {
+  position: relative;
+  width: 300px; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center both horizontally and vertically */
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.imagem-container1 img {
+  max-width: 100%;
+  max-height: 1000%;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: block; /* Remove any extra space around the image */
+  border-radius: 10px;
+}
+
+.imagem-container1 p {
+  margin: 10px;
+  color: black;
+  text-align: center; /* Centralize the text horizontally */
+  position: absolute;
+  bottom: 50%; /* Set the bottom position to 50% */
+  left: 0;
+  right: 0;
+  transform: translateY(50%); /* Move the element up by half of its height */
+  font-size: 14px;
+ 
+  line-height: 1.4;
+  opacity: 0; /* Initially hide the <p> element */
+  transition: opacity 0.3s ease; /* Add a smooth transition for opacity */
+}
+
+.imagem-container1:hover p {
+  opacity: 1; /* Make the <p> element visible on hover */
+}
+
+.imagem-container1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.imagem-container1:hover img {
+  transform: scale(0);
+}
+
+
+  
+.servico{ text-align: center;color:#fff;}
+.D{ text-align: center; color:#fff;}
+
+#endereço{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Isso garantirá que o formulário esteja centralizado verticalmente */
+  color:#3d3e40;
+}
+.contato1{
+  color:#f2f2f2;
+}
+.container2 p{
+  color:#3d3e40; 
+  background-color:#fff;
+ 
+}
+.container2 iframe{
+  background-color:#fff;
+}
+
+
+
+.card {
+  width: fit-content;
+  height: fit-content;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  
+}
+
+/* for all social containers*/
+.socialContainer {
+  border-radius: 10px;
+
+  width: 40px;
+  height: 40px;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.container01 {
+  max-width: 75vw;
+  
+}
+.container01 .carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  
+}
+
+.container01 .carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.container01 .carousel .item {
+  background-color: #333;
+  margin: 10px;
+  padding: 10px;
+  width: 280px;
+  border-radius: 16px;
+  flex: none;
+  width: 93%;
+  /* Define o height do contêiner, para ocupar toda a tela */
+  height: 100%;
+}
+
+.container01 .carousel .item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container01 .carousel .item .info {
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container01 .carousel .item .info span {
+  display: block;
+  text-align: center;
+  color: #1e1e1e;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.container01 .carousel .item .info .name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #00a8fb;
+}
+
+.container01 .carousel .item .info .oldPrice {
+  font-size: 0.8rem;
+  text-decoration: line-through;
+  flex-grow: 1;
+  color: #e81a5d;
+}
+
+.container01 .carousel .item .info .price {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #adb4ba;
+}
+
+.container01 .buttons {
+  width: 100%;
+  text-align: center;
+}
+.container01 .buttons button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.container01 .buttons button:first-child img {
+  transform: rotate(180deg);
+}
+.imagem{ -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;}

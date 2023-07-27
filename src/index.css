@@ -5,6 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Titillium Web', sans-serif;
+  
+   
 }
 
 html{
@@ -16,6 +18,8 @@ html{
   margin: 0 auto;
   display: flex;
   align-items: center;
+  
+
 }
 
 .container1{ 
@@ -23,10 +27,10 @@ html{
     margin: 0 auto;
 }
 
-header{
+header {
     background-color: #484a4d;
     width: 100%;
-    padding: 15px 4%;
+     /* Adjust the top and bottom padding as per your preference */
     position: sticky;
     top: 0;
     z-index: 9999;
@@ -168,3 +172,44 @@ section p{
         visibility: visible;
     }
 }
+:root {
+
+    --cor-preto: #494a4a;
+    --cor-branco: #ffffff;
+  
+  }
+  
+  div#preloader {
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--cor-branco);
+    z-index: 99999;
+  
+  }
+  
+  .loader .title {
+  
+    color: var(--cor-preto);
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    text-align: center;
+    font-family: arial;
+  
+  }
+  
+  .loader {
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top:-50px; 
+    margin-left:-50px;
+  
+  }
+  
+
